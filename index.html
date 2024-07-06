@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>JS Game</title>
 </head>
@@ -18,13 +17,27 @@
             <img src="./img/robot.png" alt="robô mergulhador" class="container__imagem-robo" />
             <div class="container__informacoes">
                 <img src="./img/trophy.png" alt="ícone de um troféu" />
-                 <div class="container__texto">
+                <div class="container__texto">
                     <h1>Você <span class="container__texto-azul">acertou!</span></h1>
-                    <h2>Você descobriu o número secreto!</h2>
+                    <h2>Você descobriu o número secreto: <span id="numeroAcertado"></span></h2>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container" id="gameContainer">
+        <div class="container__conteudo">
+            <img src="./img/robot.png" alt="robô mergulhador" class="container__imagem-robo" />
+            <div class="container__informacoes">
+                <h1>Jogo de Adivinhação</h1>
+                <p>Digite um palpite de 4 dígitos:</p>
+                <input type="text" id="palpiteInput" maxlength="4">
+                <button id="verificarButton">Verificar</button>
+                <div id="feedbackMessage"></div> <!-- Nova div para mostrar o feedback -->
+            </div>
+        </div>
+    </div>
+
     <script src="app.js" defer></script>
 </body>
 
