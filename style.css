@@ -61,7 +61,9 @@ body {
     text-align: center;
     margin-bottom: 16px;
     color: black; /* Definindo a cor do texto dentro do input para preto */
-    background-color: white; /* Definindo a cor de fundo do input para branco */
+    background-color: transparent; /* Removendo o fundo branco padrão */
+    border: 1px solid #ccc; /* Adicionando uma borda para distinguir o campo */
+    border-radius: 4px;
 }
 
 #verificarButton {
